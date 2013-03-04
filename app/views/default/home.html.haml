@@ -13,7 +13,7 @@
     %a(href="/logout") Log out
 %ul
   
-  - %w[facebook twitter linkedin].each do |service|
+  - %w[facebook twitter linkedin google github youtube wordpress gmail instagram flicker dropbox foursquare meetup dwolla klout 37signals].each do |service|
     %li
       = service.capitalize
       - if @profiles && @profiles[service]
