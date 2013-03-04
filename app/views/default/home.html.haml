@@ -1,9 +1,7 @@
-
-<h1 style="color:#003333"> Hi James,Welcome to CloudTags</h1>
+%h1 Different Services connected using Singly Service
 %h2
   - if @profiles
-    
-    <h2 style="color:#FF0000">Nice to see you again!</h2>
+    Nice to see you again!
   - else
    
 - if session[:access_token]
@@ -13,7 +11,7 @@
     %a(href="/logout") Log out
 %ul
   
-  - %w[facebook twitter linkedin google github youtube wordpress gmail instagram flicker dropbox foursquare meetup dwolla klout 37signals].each do |service|
+  - %w[facebook twitter linkedin].each do |service|
     %li
       = service.capitalize
       - if @profiles && @profiles[service]
